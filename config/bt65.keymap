@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-	// Press FN+LSHIFT+6+6+6 to enter bootloader mode
+	// Press FN+WIN+6+6+6 to enter bootloader mode
     combos {
         compatible = "zmk,combos";
         combo_bootloader {
