@@ -7,13 +7,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-	// Press FN+LSHIFT+B+O+O+T to enter bootloader mode
+	// Press FN+LSHIFT+6+6+6 to enter bootloader mode
     combos {
         compatible = "zmk,combos";
         combo_bootloader {
             timeout-ms = <200>;
 			layers = <3>;
-            key-positions = <49 24 24 6>;
+            key-positions = <6 6 6>;
             bindings = <&bootloader>;
         };
     };
@@ -64,7 +64,7 @@
 				&kp CAPS &trans &trans &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 				&none  &trans  &kp PSCRN &trans &tog 1 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 				&mo 3     &trans &kp K_CUT &kp K_COPY  &kp K_PASTE  &trans  &trans  &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &trans &trans &trans
-				&trans  &trans      &trans      &mo 2  &kp HOME &kp PG_UP &kp PG_DN &kp END &trans   &trans
+				&trans  &trans      &trans      &mo 2  &kp HOME &kp PG_DN &kp PG_UP &kp END &trans   &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
