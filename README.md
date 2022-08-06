@@ -9,6 +9,8 @@ This is the configuration for a BT65 wireless mechanical keyboard. To flash it, 
 
 To update the key mappings, update the `config/bt65.keymap` file in *this* branch (after reading [the ZMK docs](https://zmk.dev/docs)). A new build should appear in [the Actions screen](../../actions?query=branch%3Abt65-custom).
 
+(The rest of this README came from [PolarityWorks/zmk-config-ckp](https://github.com/PolarityWorks/zmk-config-ckp).)
+
 # zmk-config
 This is the ZMK-Config repo for the Polarity works BT60 keyboard, with this you can customise your layout and keymap to suit your exact needs.
 We have provided base keymaps for the following layouts on the soldered version: ANSI, ISO, Split backspace and right shift, Tsangan and all 1u bottom rows. These can be accessed by choosing the appropriate branch. The hotswap version has one fork which already includes support for split backspace however it is not bound to anything useful thus you will need to fork and customise to your taste
