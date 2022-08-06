@@ -1,13 +1,13 @@
 # How-to
 
-This is the configuration for a BT65 wireless mechanical keyboard keyboard. To flash it, do the following:
+This is the configuration for a BT65 wireless mechanical keyboard. To flash it, do the following:
 
-1. Visit [the Actions screen](./actions) screen of this repository/branch.
+1. Visit [the Actions screen](../../actions) screen of this repository/branch.
 2. Download the latest build's `firmware.zip` file, and extract the `[whatever].uf2` file from it
 3. Plug the keyboard into your computer, and put it in boot mode (e.g., double-tap the reset button). It should mount as a USB storage device on your computer.
 4. Drag `[whatever].uf2` into the root folder of the new mounted drive.
 
-To update the key mappings, update the `config/bt65.keymap` file in *this* branch (after reading [the ZMK docs](https://zmk.dev/docs)). A new build should appear in [the Actions screen](./actions).
+To update the key mappings, update the `config/bt65.keymap` file in *this* branch (after reading [the ZMK docs](https://zmk.dev/docs)). A new build should appear in [the Actions screen](../../actions).
 
 # zmk-config
 This is the ZMK-Config repo for the Polarity works BT60 keyboard, with this you can customise your layout and keymap to suit your exact needs.
