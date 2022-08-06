@@ -7,13 +7,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-	// Press FN+LSHIFT+B+O+T to enter bootloader mode
+	// Press FN+LSHIFT+B+O+O+T to enter bootloader mode
     combos {
         compatible = "zmk,combos";
         combo_bootloader {
             timeout-ms = <200>;
 			layers = <3>;
-            key-positions = <5 6 7 8>;
+            key-positions = <49 24 24 6>;
             bindings = <&bootloader>;
         };
     };
@@ -27,6 +27,13 @@
 				// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    | F3	|
 				// |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  | /   |   SHIFT  |  \   |  F4 |
 				// |  CTL  |  WIN  |  ALT  |            SPACE               | LEFT | DOWN | UP   | RIGHT | GRAVE | F5	|
+				// ------------------------------------------------------------------------------------------------------------
+				// ------------------------------------------------------------------------------------------------------------
+				// | 	0 |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10  | 11  | 12  |  13 | 14 		|
+				// |  15  | 16  | 17  |  18 | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  |  27  |  28    | 29		|
+				// |  30   | 31  | 32  | 33  | 34  | 35  | 36  | 37  | 38  | 39  | 40  | 41  |    42        | 43	|
+				// |   44    | 45  | 46  | 47  | 48  | 49  | 50 |  51 |  52  | 53  | 54  |   55     |  56  |  57 |
+				// |   58  |  59   |  60  |             61                 |  62  |  63  |   64  |   65  |   66   | 67	|
 				// ------------------------------------------------------------------------------------------------------------
 			bindings = <
 				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp  N8   &kp  N9   &kp N0 &kp MINUS &kp EQUAL &kp BKSP &kp F1
@@ -57,7 +64,7 @@
 				&kp CAPS &trans &trans &trans &trans &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 				&none  &trans  &kp PSCRN &trans &tog 1 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 				&mo 3     &trans &kp K_CUT &kp K_COPY  &kp K_PASTE  &trans  &trans  &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &trans &trans &trans
-				&trans  &trans      &trans      &trans   &trans  &trans  &kp HOME &kp PG_UP &kp PG_DN &kp END
+				&trans  &trans      &trans      &mo 2  &kp HOME &kp PG_UP &kp PG_DN &kp END &trans   &trans
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
