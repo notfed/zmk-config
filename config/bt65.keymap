@@ -38,7 +38,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
-		// F-layer
+		// F-lock-layer (toggle via FN+F)
 		layer_1 {
 			bindings = <
 				&trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans
@@ -50,7 +50,7 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
-		// Function layer
+		// Function layer (momentary FN)
 		layer_2 {
 			bindings = <
 				&trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans
@@ -62,14 +62,14 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
-		// Bluetooth and lighting
+		// Bluetooth and lighting (momentary FN+SHIFT)
 		layer_3 {
 			bindings = <
-				&reset &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4  &none   &none &none &none &none &none &none &trans &bt BT_CLR
-				&none  &bl BL_INC   &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_SAI  &out OUT_USB  &none  &none  &none  &none  &none  &none &bt BT_CLR
-				&none  &bl BL_DEC   &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD &rgb_ug RGB_SAI  &none  &none  &none  &none  &none  &none  &none  
-				&none  &bl BL_TOG   &rgb_ug RGB_TOG &none           &none           &out OUT_BLE  &none  &none  &none  &none  &none  &none  &none  &none  
-				&none  &none        &none   &bl BL_INC   &none  &none  &none  &none  &kp X 
+				&reset &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none            &none         &none &none &none &none &none &trans &bt BT_CLR
+				&none  &bl BL_INC   &rgb_ug RGB_BRI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_SAI  &out OUT_USB  &none &none &none &none &none &none  &bt BT_CLR
+				&none  &bl BL_DEC   &rgb_ug RGB_BRD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &rgb_ug RGB_SPD &rgb_ug RGB_SAI  &none         &none &none &none &none &none &none  
+				&none  &bl BL_TOG   &rgb_ug RGB_TOG &none           &none           &out OUT_BLE    &none            &none         &none &none &none &none &none &none  
+				&none  &none        &none           &bl BL_INC      &none           &none           &none            &none         &none &none
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
